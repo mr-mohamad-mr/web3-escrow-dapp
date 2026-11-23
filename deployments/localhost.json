@@ -1,0 +1,63 @@
+{
+  "network": "localhost",
+  "chainId": 31337,
+  "factory": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "feeBps": 250,
+  "arbiter": "0x90F79bf6EB2c4f870365E785982E1f101E93b906",
+  "feeRecipient": "0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65",
+  "owner": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "client": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+  "freelancer": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+  "freelancer2": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc",
+  "deployedAt": "2026-11-23T09:25:28.033Z",
+  "escrows": [
+    {
+      "name": "Website redesign",
+      "address": "0xa16E02E87b7454126E5E10d957A927A7F5B5d2be",
+      "state": "Created",
+      "note": "3 ETH, unfunded"
+    },
+    {
+      "name": "Mobile app MVP",
+      "address": "0xB7A5bd0345EF1Cc5E66bf61BdeC17D2461fBd968",
+      "state": "Funded",
+      "note": "5 ETH in milestones [2, 3]"
+    },
+    {
+      "name": "Landing page + copy",
+      "address": "0xeEBe00Ac0756308ac4AaBfD76c05c4F3088B8883",
+      "state": "Delivered",
+      "note": "1.5 ETH, hash QmLandingPageV1"
+    },
+    {
+      "name": "API integration",
+      "address": "0x10C6E9530F1C1AF873a391030a1D9E8ed0630D26",
+      "state": "Released",
+      "note": "2 ETH, freelancer withdrew"
+    },
+    {
+      "name": "Logo & brand kit",
+      "address": "0x603E1BD79259EbcbAaeD0c83eeC09cA0B89a5bcC",
+      "state": "Disputed",
+      "note": "2 ETH, awaiting arbiter"
+    },
+    {
+      "name": "Blog migration",
+      "address": "0x86337dDaF2661A069D0DcB5D160585acC2d15E9a",
+      "state": "Resolved",
+      "note": "4 ETH split 50/50, client withdrew"
+    },
+    {
+      "name": "Data cleanup",
+      "address": "0x9CfA6D15c80Eb753C815079F2b32ddEFd562C3e4",
+      "state": "Refunded",
+      "note": "1 ETH returned after deadline"
+    },
+    {
+      "name": "Dashboard build",
+      "address": "0x427f7c59ED72bCf26DfFc634FEF3034e00922DD8",
+      "state": "Delivered",
+      "note": "5 ETH milestones [2, 2, 1]: m0 paid, m1 under review, m2 pending"
+    }
+  ]
+}

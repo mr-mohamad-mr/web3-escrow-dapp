@@ -1,0 +1,44 @@
+{
+  "name": "web3-escrow-dapp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Milestone-based freelance escrow on Ethereum: Solidity contracts, Hardhat tests, an ethers v6 layer, a CLI and a React demo frontend. Local chain only.",
+  "keywords": [
+    "solidity",
+    "escrow",
+    "hardhat",
+    "ethers",
+    "react",
+    "vite",
+    "freelance",
+    "milestones"
+  ],
+  "author": "Mamad Mirza (https://github.com/mr-mohamad-mr)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mr-mohamad-mr/web3-escrow-dapp.git"
+  },
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "node": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "seed:local": "hardhat run scripts/seed.js --network localhost",
+    "interact": "node scripts/interact.js",
+    "app:install": "npm --prefix frontend install",
+    "app:dev": "npm --prefix frontend run dev",
+    "app:build": "npm --prefix frontend run build",
+    "app:serve": "npm --prefix frontend run preview",
+    "app:smoke": "npm --prefix frontend run smoke",
+    "docker:up": "docker compose up --build",
+    "docker:down": "docker compose down"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.29.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.6.1"
+  }
+}

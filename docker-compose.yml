@@ -1,0 +1,18 @@
+# docker compose up --build
+#   frontend: http://localhost:4173
+#   local RPC: http://localhost:8545 (Hardhat, chain id 31337)
+# Ports are bound to 127.0.0.1 only: this is a local demo chain with
+# well-known test keys and must never be exposed.
+services:
+  escrow-demo:
+    build: .
+    image: web3-escrow-dapp:local
+    ports:
+      - "127.0.0.1:8545:8545"
+      - "127.0.0.1:4173:4173"
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:4173/deployment.json').then(r=>r.json()).then(d=>process.exit(d.escrows&&d.escrows.length===8?0:1)).catch(()=>process.exit(1))"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 20s
