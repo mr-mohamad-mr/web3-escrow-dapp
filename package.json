@@ -35,7 +35,7 @@
     "docker:down": "docker compose down"
   },
   "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^7.0.0",
     "hardhat": "^2.29.2"
   },
   "dependencies": {
